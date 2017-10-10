@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Comfortaa|Poiret+One|Source+Code+Pro" rel="stylesheet">
+        <title>Local Weather</title>
+    </head>
+    <body>
+            <img src="clouds.jpg" class="background-image" alt="Free Stormy Weather Desktop Wallpaper" />
+        
+        <div class="app-frame">
+            
+            <img src="clouds.jpg" class="background-image"/>
+
+            <form>
+                <input type="text" class="city-name" id="city" placeholder="e.g. Madrid">
+            </form>
+            
+            <button class="city-search" onclick="showCity()">Show current weather</button>
+            
+            <div class="lines">
+                <div class="vertical-line"></div>
+                <div class="line1"></div>                
+            </div>
+            
+            <div class="temp">
+              <h1>
+                  <p style="font-size: 1em">Temperature:</p>  
+                  <p style="display: inline; font-size: 1.5em" id="temp">0.0</p>
+                  <p style="display: inline" id="temper"> °C</p>
+                  <p style="font-size: 2em" id="location">Location</p>
+              </h1>
+            
+             <div class="weather-icon">
+                <img style="width: 15%; height: 25%; left: 41%" id="icon" src="http://openweathermap.org/img/w/10d.png">
+             </div>
+            </div>
+            <div class="wind">
+                <h1><p style="display: inline">Wind: </p><p style="display: inline" id="wind">0.0</p><p style="display: inline" id="winder"> KmPH</p></h1>
+                <div class="humidity">
+                <h1><p style="display: inline"> Humidity: </p><p style="display: inline" id="humidity">0.0</p> %</h1>
+                </div>
+                <div class="pressure">
+                    <h1><p style="display: inline"> Pressure: </p><p style="display: inline" id="pressure">1000</p> <p style="display: inline" id="presser"> hPa</p>
+                    </h1>
+                </div>
+            </div>
+            <div class="converter">
+                <button class="convert" onclick="onClick(); converter(); c2f()" id="clicker">to Fahrenheit/Imperial</button>
+            </div>
+            <script src="app.js"></script>
+        
+        </div>
+        
+    
+    </body>
+
+</html>
